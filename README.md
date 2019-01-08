@@ -6,12 +6,15 @@
 
 - Home page
 
-![home](https://cldup.com/FRewyA-EEI-3000x3000.png)
+![home](https://cldup.com/4InBDLTCCt-3000x3000.png)
 
+- Profile page
+
+![profile](https://cldup.com/moj9AEh6iF-3000x3000.png)
 
 - Post Detail View
 
-![post detail](https://cldup.com/mERDZPBshM-3000x3000.png)
+![post detail](https://cldup.com/hXI9IqSSm2-3000x3000.png)
 
 ## How to use Dark Paper
 
@@ -101,7 +104,7 @@ concat: {
 * see [LICENSE](https://github.com/vinitkumar/white-paper/blob/gh-pages/LICENSE) file
 
 ## Version
-* Version 4.0.0
+* Version 1.0.0
 
 ## Contact
 #### Developer
