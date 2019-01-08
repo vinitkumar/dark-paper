@@ -1,0 +1,12 @@
+<div class="header-container container">
+  <header>
+    <a href="{{ site.url }}" class="top-link">{{ site.name }}</a>
+     <ul class="nav">
+      {% for item in site.data.samplelist.docs %}
+      <li class="{% if item.url == page.url %}active{% endif %}">
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </header>
+</div>
