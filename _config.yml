@@ -9,6 +9,10 @@ master_repo: false
 url: "http://vinitkumar.me/dark-paper"
 markdown: kramdown
 highlighter: rouge
+subdomain_slug: dark-paper
+# make on_subdomain false if using on a root domain
+on_subdomain: true
+
 
 plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
 

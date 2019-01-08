@@ -3,8 +3,12 @@
     <a href="{{ site.url }}" class="top-link">{{ site.name }}</a>
      <ul class="nav">
       {% for item in site.data.samplelist.docs %}
-      <li class="{% if item.url == page.url %}active{% endif %}">
-        <a href="{{ item.url }}">{{ item.title }}</a>
+        <li class="{% if item.url == page.url %}active{% endif %}">
+          {% if item.url != site.owner.github %}
+            <a href="{% if site.on_subdomain %}{{ site.subdomain_slug }}{% endif %}{{ item.url }}">{{ item.title }}</a>
+          {% else %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          {% endif %}
       </li>
       {% endfor %}
     </ul>
