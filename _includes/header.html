@@ -7,6 +7,10 @@
           <li class="{% if item.url == page.url %}active{% endif %}">
             <a href="{{ site.url }}/about.html">{{ item.title }}</a>
           </li>
+        {% elsif item.title == "Home" %}
+          <li class="{% if item.url == page.url %}active{% endif %}">
+            <a href="{{ site.url }}">{{ item.title }}</a>
+          </li>
         {% else %}
           <li class="{% if item.url == page.url %}active{% endif %}">
             <a href="{{ item.url }}">{{ item.title }}</a>
