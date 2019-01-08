@@ -1,6 +1,8 @@
 # Dark Paper
 
-**Dark Paper** is a theme for Jekyll. It is built keeping content in focus and is best for writers/developers who also like to share code with their essays.
+**Dark Paper** is a dark theme for Jekyll. It is a sister theme of [white-paper](https://github.com/vinitkumar/white-paper). If you like light colored themes, you can check white-paper. 
+
+It is built keeping content in focus and is best for writers/developers who also like to share code with their essays.
 
 # Dark Paper in Action
 
