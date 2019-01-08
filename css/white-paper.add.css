@@ -533,6 +533,9 @@ code.html span.doctype {
   margin-left: 0;
 }
 /* @end */
+.user-avatar {
+  border-radius: 50%;
+}
 
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }

@@ -4,7 +4,7 @@ title: About Vinit Kumar
 ---
 
 <h1 class="owner-name">{{ site.owner.name}} </h1>
-![user-avatar]({{ site.owner.avatar }})
+<img class="user-avatar" src="{{ site.owner.avatar }}">
 
 {{site.about}}
 

@@ -533,3 +533,6 @@ code.html span.doctype {
   margin-left: 0;
 }
 /* @end */
+.user-avatar {
+  border-radius: 50%;
+}
