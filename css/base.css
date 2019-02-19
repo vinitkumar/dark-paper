@@ -30,29 +30,37 @@ a img{ border:none; }
   Main Layout
 ----------------------------------------------------------------------------*/
 
-@font-face {
-    font-family: AvenirLTStd;
-    font-style: normal;
-    src: url("AvenirLTStd-Book.otf") format("opentype");
-    font-display: swap;
-}
+/* @font-face { */
+/*     font-family: AvenirLTStd; */
+/*     font-style: normal; */
+/*     src: url("AvenirLTStd-Book.otf") format("opentype"); */
+/*     font-display: swap; */
+/* } */
 
 body {
-  background: black;
-  font-family: "AvenirLTStd", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 14.5px;
-  : #333;
+  background: rgb(22, 22, 22);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-p {
-  color: white;
+
+ul li, p {
+  color: #f2f3f4;
   font-size: 21px;
 }
 
+p {
+  word-break: break-word;
+  font-weight: 400;
+}
+
 a.top-link {
-  color : #2382c8;
+  font-family: 'Montserrat', sans-serif;
+  color : #3ee7ad;
   margin-top: 40px;
   font-size: 60px;
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -68,7 +76,7 @@ strong {
 }
 
 a {
-  color: #2382c8;
+  color: #3ee7ad;
   text-decoration: none;
 }
 a:hover {
@@ -119,7 +127,7 @@ ul.nav {
 ul.nav li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 300;
 }
 @media only screen and (max-width: 520px) {
@@ -139,14 +147,14 @@ ul.nav li {
   }
 }
 ul.nav li a {
-  color: white;
+  color: #f2f3f4;
   margin-right: 10px;
   text-decoration: none;
   font-weight: lighter;
 }
 
 ul.nav li.active a {
-  color: deepskyblue;
+  color: #3ee7ad;
 }
 
 ul.nav li.logo {
@@ -186,19 +194,22 @@ ul.nav li.logo a {
 }
 
 .listing .post h2 {
+  font-family: 'Montserrat', sans-serif;
   margin: 0 0 -20px 0;
   font-size: 30px;
   border: none;
 }
 
 h2, .listing .post h2 a {
-  color: #2382c8;
+  font-family: 'Montserrat', sans-serif;
+  color: #3ee7ad;
   text-decoration: none;
-  font-size: 40px;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 .listing .post h2 i {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .listing .post .post-summary {
@@ -216,9 +227,9 @@ h2, .listing .post h2 a {
   font-weight: lighter;
 }
 .listing .post.other h2 a {
-  color: #2382c8;
+  color: #3ee7ad;
 }
-.listing .post.other h2 a:hover {
+.listing .post.other h2 a:hover, .nav li a:hover, a.social-media-icons:hover {
   color: deepskyblue;
 }
 .listing .post.other p:last-child {
@@ -249,7 +260,7 @@ h2, .listing .post h2 a {
   }
 
   .listing .post h2 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .listing .post .post-summary {
@@ -292,7 +303,7 @@ h1.link {
 }
 h1.link .desc {
   font-weight: normal;
-  : white;
+  : #f2f3f4;
 }
 @media only screen and (max-width: 700px) {
   h1 {
@@ -304,7 +315,7 @@ h1.link .desc {
 /* h2 { */
 /*   margin: 2.0em 0 -0.5em 0; */
 /*   font-size: 40px; */
-/*   color: white; */
+/*   color: #f2f3f4; */
 /* } */
 
 h3 {
@@ -318,7 +329,7 @@ h3 a:hover, h2 a:hover{ :#000; border:none; }
 h4 {
   font-size: 1em;
   font-weight: normal;
-  color: white;
+  color: #f2f3f4;
 }
 
 .pagination  {
@@ -368,7 +379,7 @@ table {
   width: 100%;
   border-top: 1px solid #CCCCCC;
   border-bottom: 2px solid #CCC;
-  color: white;
+  color: #f2f3f4;
   background: #fff;
   border-collapse: separate;
   font-size: 11px;
@@ -460,15 +471,72 @@ p > a > img {
 pre {
   margin: 16px 0;
   padding: 10px;
+  color: #444;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  border-radius: 4px;
   overflow: auto;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+code{
+  padding: 0 4px;
+  font-size: 0.9em;
+  color: #556270;
+  background: #F4FAFF;
+  border-radius: 3px;
+}
+pre code {
+  padding: 0;
+  color: inherit;
+  background: inherit;
+  border-radius: 0;
+}
+code span.global {
+  color: #3388DD;
+}
+code span.brackets {
+  color: #777777;
+}
+code span.string {
+  color: #BC6710;
+}
+code span.symbol, code span.selectors {
+  color: #1199EE;
+}
+code span.properties {
+  color: #BB4411;
+}
+code span.keywords {
+  color: #44BB22;
+}
+code span.comment {
+  color: #BCBCBC;
+}
+code span.shell {
+  background:#f1f1f1;
+}
+
+code.html span.tag, code.xaml span.tag {
+  color: #BB4411;
+}
+code.html span.attribute, code.xaml span.attribute {
+  color: #44BB22;
+}
+code.html span.string, code.xaml span.string {
+  color: blue;
+}
+code.html span.comment, code.xaml span.comment {
+  color: #999999;
+}
+code.html span.doctype {
+  color: #D7FF80;
 }
 
 
 .social-media-icons  {
   float: left;
   margin-right: 6px;
-  color: white;
+  color: #f2f3f4;
 }
 
 
@@ -477,5 +545,13 @@ pre {
 }
 /* @end */
 .user-avatar {
-  border-radius: 50%;
+  border-radius: 12px;%
+}
+
+ul {
+  list-style: none;
+}
+
+.about-container {
+  text-align: left;
 }
