@@ -1,6 +1,6 @@
 # Dark Paper
 
-**Dark Paper** is a dark theme for Jekyll. It is a sister theme of [white-paper](https://github.com/vinitkumar/white-paper). If you like light colored themes, you can check white-paper. 
+**Dark Paper** is a dark theme for Jekyll. It is a sister theme of [white-paper](https://github.com/vinitkumar/white-paper). If you like light colored themes, you can check white-paper.
 
 It is built keeping content in focus and is best for writers/developers who also like to share code with their essays.
 
@@ -8,15 +8,11 @@ It is built keeping content in focus and is best for writers/developers who also
 
 - Home page
 
-![home](https://cldup.com/4InBDLTCCt-3000x3000.png)
+![home](https://cldup.com/0OOg4BNi5t.png)
 
 - Profile page
 
-![profile](https://cldup.com/moj9AEh6iF-3000x3000.png)
-
-- Post Detail View
-
-![post detail](https://cldup.com/hXI9IqSSm2-3000x3000.png)
+![profile](https://cldup.com/wkqPjKWknS-2000x2000.png)
 
 ## How to use Dark Paper
 
