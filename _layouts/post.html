@@ -1,15 +1,34 @@
 ---
 layout: default
 ---
-<h2>{{ post.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<h2 style="margin-bottom: -20px;">{{ page.title }}</h2>
+<p class="post-date">{{ page.date | date_to_string }}</p>
 
 <div class="post">
 {{ content }}
 </div>
 
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.owner.twitter }}" data-size="large" data-hashtags="{{site.name}}">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<a class="twitter-share-button"
+   href="https://twitter.com/intent/tweet?text={{page.title}}"
+   data-hashtags="{{ page.tags | join: ', ' }}"
+   data-via="{{ site.owner.twitter_username }}"
+   data-size="large">Tweet</a>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 
 {% if site.disqus_shortname %}
 {% include disqus_comments.html %}
