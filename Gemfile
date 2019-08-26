@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
+gem "jekyll", "~> 4.0"
 gem "jekyll-paginate"
 gem "jekyll-gist"
-gem "jekyll"
+gem "json"
 gem 'jekyll-feed'
 gem "rouge"
