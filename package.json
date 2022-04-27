@@ -11,6 +11,6 @@
     "grunt-rtlcss": "^2.0.1"
   },
   "dependencies": {
-    "grunt": "^1.0.1"
+    "grunt": "^1.5.2"
   }
 }
