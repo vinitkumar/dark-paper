@@ -11,5 +11,5 @@ gem "base64"
 gem "bigdecimal"
 gem "sassc"
 gem "liquid"
-gem "octokit"
+gem "octokit", ">= 10.0.0"
 gem 'jekyll-compose', group: [:jekyll_plugins]
