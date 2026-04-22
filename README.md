@@ -44,13 +44,13 @@ Next, Go the the project settings and change the repository name to `<username>.
 
 Change these entries in the `_config.yml` file:
 
-Also, change this line in head.html [link](https://github.com/vinitkumar/white-paper/blob/9ad021a8f94c6240351bd57eda301b5f207e554e/_includes/head.html#L28)
+Also, change this line in head.html [link](https://github.com/vinitkumar/dark-paper/blob/master/_includes/head.html#L28)
 
 ```html
 <!-- From this -->
-<link rel="stylesheet" href=" {{ '/css/main.min.css' | relative_url }}" type="text/css" />
+<link rel="stylesheet" href=" {{ '/dist/css/main.min.css' | relative_url }}" type="text/css" />
 <!-- To this -->
-<link rel="stylesheet" href=" {{ '/css/main.min.css' | absolute_url }}" type="text/css" />
+<link rel="stylesheet" href=" {{ '/dist/css/main.min.css' | absolute_url }}" type="text/css" />
 
 ```
 
@@ -71,22 +71,22 @@ Also, change all other fields in the `_config.yml` file to your choice.
 This theme requires you to install couple of tools first to setup jekyll locally.
 
 ```$
-git clone git@github.com:vinitkumar/white-paper.git
+git clone git@github.com:vinitkumar/dark-paper.git
 
 # If you have ruby installed.
 gem install jekyll bundler
 
 # If you have node installed.
 npm install
-sudo npm install -g grunt-cli  #to get the task runner for grunt.
 bundle install
-jekyll serve
+npm run build
+bundle exec jekyll serve
 
 # on running the serve script, the site will be live on
 http://127.0.0.1:4000
 ```
-This theme uses grunt to concat & minify the css for best performance. In order to prepare the css build. Run `grunt`
-It will create a main.min.css file in the css folder.
+This theme uses Vite to bundle and minify the CSS, then `rtlcss` to generate the right-to-left stylesheet. In order to prepare the CSS build, run `npm run build`.
+It will create `dist/css/main.min.css` and `dist/css/main.min.rtl.css`.
 
 ### Switch Syntax Highlighting.
 
@@ -103,23 +103,17 @@ This theme also provides syntax highlighting in different theme. Inside css fold
 
 ```
 
-Now in the gruntfiles.js
+Now in `css/main.css`
 
-```js
-concat: {
-  dist: {
-    src: [
-      'css/base.css',
-      'css/sytax/emacs.css', // change this to another theme if you prefer, like vim.css and run grunt
-      'css/octicons.css'
-    ],
-    dest: 'css/<%= pkg.name %>.add.css'
-  }
-}
+```css
+@import './base.css';
+@import './syntax/monokai.css'; /* change this to another theme if you prefer, like vim.css, and run npm run build */
+@import './octicons.css';
+@import './font-awesome.min.css';
 ```
 
 ## License
-* see [LICENSE](https://github.com/vinitkumar/white-paper/blob/gh-pages/LICENSE) file
+* see [LICENSE](https://github.com/vinitkumar/dark-paper/blob/master/LICENSE) file
 
 ## Version
 * Version 1.0.0
