@@ -1,16 +1,16 @@
 {
-  "name": "white-paper",
+  "name": "dark-paper",
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": "7.5.0"
+    "node": ">=20"
   },
   "devDependencies": {
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-rtlcss": "^2.0.1"
+    "rtlcss": "^4.3.0",
+    "vite": "^8.0.9"
   },
-  "dependencies": {
-    "grunt": "^1.6.1"
+  "scripts": {
+    "build": "vite build && rtlcss dist/css/main.min.css dist/css/main.min.rtl.css",
+    "dev": "vite"
   }
 }

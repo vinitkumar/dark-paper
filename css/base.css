@@ -88,7 +88,7 @@ hr {
   text-align: center;
   letter-spacing: 3px;
   font-size: 20px;
-  : #ddd;
+  color: #ddd;
   border: none;
 }
 hr:before {
@@ -251,7 +251,7 @@ h2, .listing .post h2 a {
 }
 
 .listing blockquote {
-  border-left-: #ddd;
+  border-left-color: #ddd;
 }
 
 @media only screen and (max-width: 520px) {
@@ -289,21 +289,21 @@ p.intro {
   }
 }
 p.intro a {
-  : #55acee;
+  color: #55acee;
 }
 
 h1 {
   margin-left: 20px;
 }
 h1.words {
-  : #DB2C17;
+  color: #DB2C17;
 }
 h1.link {
   font-size: 32px;
 }
 h1.link .desc {
   font-weight: normal;
-  : #f2f3f4;
+  color: #f2f3f4;
 }
 @media only screen and (max-width: 700px) {
   h1 {
@@ -323,8 +323,8 @@ h3 {
   font-size: 17px;
   color: #333;
 }
-h3 a, h3 a:visited, h2 a, h2 a:visited{ :#000; }
-h3 a:hover, h2 a:hover{ :#000; border:none; }
+h3 a, h3 a:visited, h2 a, h2 a:visited{ color:#000; }
+h3 a:hover, h2 a:hover{ color:#000; border:none; }
 
 h4 {
   font-size: 1em;
@@ -354,7 +354,7 @@ h4 {
   font-size: 11px;
   line-height: 12px;
   text-align: left;
-  : #666;
+  color: #666;
   background: #ddd;
 }
 .figure small strong {
@@ -372,7 +372,7 @@ blockquote {
 }
 blockquote p {
   margin: 12px 0;
-  : #999;
+  color: #999;
 }
 
 table {
@@ -545,7 +545,7 @@ code.html span.doctype {
 }
 /* @end */
 .user-avatar {
-  border-radius: 12px;%
+  border-radius: 12px;
 }
 
 ul {
