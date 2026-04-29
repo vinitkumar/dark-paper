@@ -4,7 +4,7 @@ gem "jekyll", "~> 4.4.0"
 gem "jekyll-paginate"
 gem "jekyll-gist"
 gem 'jekyll-feed'
-gem "json"
+gem "json", ">= 2.19.2"
 gem "rouge"
 gem "csv"
 gem "base64"
